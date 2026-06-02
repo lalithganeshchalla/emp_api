@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Mani",
+    "department": "SAP CPI",
+    "salary": 50000
+  },
+  {
+    "id": 2,
+    "name": "Lalit",
+    "department": "SAP",
+    "salary": 60000
+  },
+  {
+    "id": 3,
+    "name": "Ganesh",
+    "department": "SAP",
+    "salary": 55000
+  }
+]
