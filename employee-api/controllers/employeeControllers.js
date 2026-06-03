@@ -1,6 +1,8 @@
 const fs = require("fs");
 
-const FILE_PATH = "./data.json";
+const path = require("path");
+
+const FILE_PATH = path.join(__dirname, "../data.json");
 
 // Read data from file
 const readEmployees = () => {
@@ -61,8 +63,8 @@ exports.createEmployee = (req, res) => {
 
     // 🔥 AUTO ID GENERATION
     const newId = employees.length > 0
-        ? employees[employees.length - 1].id + 1
-        : 1;
+    ? Math.max(...employees.map(e => e.id)) + 1
+    : 1;
 
     const newEmployee = {
         id: newId,
